@@ -1,9 +1,47 @@
+body {
+    background-color: rgb(133, 133, 133);
+}
+
+#title {
+    text-shadow: 2px 2px 0 black;
+    font-weight: bold;
+}
+
+#div1 {
+    display: block;
+    position: relative;
+    width: 450px;
+    height: 530px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    border: thin solid white;
+    top: 100px;
+    text-align: center;
+    font-family: 'VT323', monospace;
+    font-size: 32px;
+    color: rgb(233, 0, 0);
+    border-radius: 10px;
+    box-shadow: 5px 6px 0 black;
+}
+
+#div2 {
+    display: block;
+    position: relative;
+    width: 160px;
+    height: 120px;
+    background-color: white;
+    border: thin solid white;
+    border-radius: 10px;
+    bottom: 250px;
+    left: 100px;
+    box-shadow: 3px 4px 0 black;
+}
+
 #container {
     display: grid;
     width: 400px;
     height: 400px;
     position: relative;
-    top: 150px;
     margin: auto;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(16, 1fr);
@@ -12,23 +50,39 @@
 
 .grid {
     border: thin solid rgb(0, 0, 0);
-    background-color: transparent;
+    background-color: white;
 }
 
 #clear {
+    display: block;
     border: none;
     color: aliceblue;
-    background-color: sandybrown;
-    padding: 10px 15px;
-    font-size: 15px;
+    width: 120px;
+    height: 40px;
+    background-color: rgb(233, 0, 0);
+    padding: 10px;
+    font-size: 20px;
     cursor: pointer;
+    margin: 12px 20px;
+    border-radius: 5px;
+    font-family: 'VT323', monospace;
+    text-shadow: 2px 2px 0 black;
+    font-weight: bold;
 }
 
 #new {
+    display: block;
     border: none;
     color: aliceblue;
-    background-color: rgb(168, 244, 96);
-    padding: 10px 15px;
-    font-size: 15px;
+    width: 120px;
+    height: 40px;
+    background-color: rgb(233, 0, 0);
+    padding: 10px;
+    font-size: 20px;
     cursor: pointer;
+    margin: 12px 20px;
+    border-radius: 5px;
+    font-family: 'VT323', monospace;
+    text-shadow: 2px 2px 0 black;
+    font-weight: bold;
 }
