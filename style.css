@@ -45,7 +45,7 @@ body {
     margin: auto;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(16, 1fr);
-    border: thin solid rgb(0, 0, 0);
+    
 }
 
 .grid {
