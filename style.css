@@ -86,3 +86,15 @@ body {
     text-shadow: 2px 2px 0 black;
     font-weight: bold;
 }
+
+#new:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+#clear:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+button:active {
+    transform: scale(0.9);
+}

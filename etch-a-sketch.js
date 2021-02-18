@@ -9,16 +9,11 @@ for (let i = 0; i < 256; i++) {
 const cells = document.querySelectorAll('.grid');
 cells.forEach(cell => cell.addEventListener('mouseover', randomColor));
 
-//function changeColor() {
-//    this.classList.add('color');
-//    console.log(this);
-//}
-
 function randomColor() {
     let r = Math.floor(Math.random() * 256);
     let g = Math.floor(Math.random() * 256);
     let b = Math.floor(Math.random() * 256);
-    let a = 0.9;
+    let a = 1;
 
     let color = "rgba(" + r + "," + g + "," + b + "," + a + ")";
 
@@ -40,6 +35,7 @@ function newGrid() {
     let size = prompt("Squares per side:", "Between 2 - 25");
     if (size < 2) size = 2;
     else if (size > 25) size = 25;
+    else if (!(size <= 25) && !(size >= 2)) size = 16;
 
     const els = document.querySelectorAll('.grid');
     els.forEach(el => container.removeChild(el));
